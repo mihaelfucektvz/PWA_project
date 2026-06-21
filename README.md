@@ -1,15 +1,41 @@
-# PWA_project
-Francuska stranica za vijesti.
-Samo home je na francuskom, sve ostalo je na hrv da se razumije sto je sta.
+# 📰 PWA Project
 
-Za stranicu postoji admin user koji ima pravo nad cijelom stranicom.
-USER: admin
-PASS: admin
+**Francuska stranica za vijesti.**
 
-Te postoji drugi user koji nema pristup administraciji stranice.
-USER: a
-PASS: a
+Samo **Home** stranica je na francuskom jeziku, dok je ostatak aplikacije na hrvatskom kako bi se lakše razumjelo što se nalazi u pojedinim dijelovima sustava.
 
-Mogu se kreirati ostali useri ali bez admin razine.
+---
 
-Kod za bazu je napravljen za 3306 port.
+## 👨‍💼 Administratorski račun
+
+Administrator ima potpuni pristup svim funkcionalnostima stranice.
+
+| Korisničko ime | Lozinka |
+| -------------- | ------- |
+| `admin`        | `admin` |
+
+---
+
+## 👤 Standardni korisnički račun
+
+Ovaj korisnik nema pristup administracijskom dijelu stranice.
+
+| Korisničko ime | Lozinka |
+| -------------- | ------- |
+| `a`            | `a`     |
+
+---
+
+## ➕ Dodatni korisnici
+
+Moguće je kreirati nove korisničke račune, ali oni **nemaju administratorske ovlasti**.
+
+---
+
+## 🗄️ Baza podataka
+
+Konfiguracija baze podataka postavljena je za korištenje porta:
+
+```text
+3306
+```
