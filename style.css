@@ -1,0 +1,347 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* OSNOVNE POSTAVKE STRANICE */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    color:#111;
+}
+
+/* ZAGLAVLJE */
+header{
+    background:white;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+/* LOGO */
+.logo img{
+    margin:20px 0;
+    height:70px;
+}
+
+/* NAVIGACIJA */
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    font-size:14px;
+}
+
+/* GLAVNI SADRŽAJ */
+main{
+    width:1000px;
+    margin:50px auto;
+}
+
+/* NASLOVI SEKCIJA */
+.category{
+    margin-bottom:80px;
+}
+
+.category h2{
+    margin-bottom:25px;
+    font-size:38px;
+    border-top:4px solid black;
+    display:inline-block;
+    padding-top:10px;
+}
+
+/* GRID ZA VIJESTI */
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+/* KARTICA VIJESTI */
+.news-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.news-card h3{
+    margin-top:15px;
+    font-size:20px;
+    line-height:1.4;
+}
+
+.news-card a{
+    color:#111;
+    text-decoration:none;
+}
+
+.news-card a:hover{
+    text-decoration:underline;
+}
+
+/* PODNOŽJE */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#e9eef2;
+    border-top:1px solid #ccc;
+}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+
+    main{
+        width:95%;
+    }
+
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+    }
+}
+
+
+
+/* =====================================
+   STILOVI ZA POJEDINACNI CLANAK
+===================================== */
+
+.article-container{
+    max-width:900px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+}
+
+.article-container h1{
+    font-size:48px;
+    text-align:center;
+    margin-bottom:10px;
+    line-height:1.2;
+}
+
+.article-date{
+    text-align:center;
+    color:gray;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.article-image{
+    width:100%;
+    margin-bottom:30px;
+}
+
+.article-lead{
+    font-size:28px;
+    line-height:1.5;
+    margin-bottom:40px;
+    font-weight:500;
+}
+
+.article-content{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.article-content h2{
+    margin:40px 0 20px;
+    font-size:32px;
+}
+
+.article-content p{
+    margin-bottom:25px;
+}
+
+/* MOBITEL */
+@media(max-width:768px){
+
+    .article-container{
+        width:95%;
+        padding:20px;
+    }
+
+    .article-container h1{
+        font-size:32px;
+    }
+
+    .article-lead{
+        font-size:22px;
+    }
+
+    .article-content{
+        font-size:18px;
+    }
+
+}
+
+
+/* =====================================
+   FORMA
+===================================== */
+
+.form-container{
+    max-width:900px;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+}
+
+.form-container h1{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.form-item{
+    margin-bottom:25px;
+}
+
+.form-item label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.form-item input[type=text],
+.form-item input[type=password],
+.form-item textarea,
+.form-item select{
+    width:100%;
+    padding:12px;
+    font-size:16px;
+    height:45px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+}
+
+.error-message{
+    color:red;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.success-message{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:20px;
+    color:green;
+}
+
+.form-buttons button{
+    background:black;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+}
+
+.form-buttons button:hover{
+    opacity:0.9;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.form-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.form-buttons button{
+    padding:12px 25px;
+    cursor:pointer;
+}
+
+/* KATEGORIJA ISPIS */
+
+.category-display{
+    text-transform:uppercase;
+    color:#666;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.archive-info{
+    margin-top:40px;
+    padding:15px;
+    background:#f3f3f3;
+}
+
+/* =====================================
+   ADMIN
+===================================== */
+
+.admin-container{
+    width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+}
+
+.admin-container h1{
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.admin-container form{
+    margin-bottom:40px;
+}
+
+.admin-container input[type=text],
+.admin-container textarea,
+.admin-container select{
+    width:100%;
+    padding:10px;
+}
+
+.admin-container hr{
+    margin-top:30px;
+}
+
+header{
+    position: relative;
+}
+
+/* USER LINKS DESNO GORE */
+.user-links{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.user-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.user-links a{
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.user-links a:hover{
+    color: #555;
+    text-decoration: underline;
+}
